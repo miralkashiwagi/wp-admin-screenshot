@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^23.2.1"
+  },
+  "scripts": {
+    "start": "npm-run-all -s login screenshot report",
+    "login": "node wp-login.js",
+    "screenshot": "node wp-screenshot.js",
+    "report": "node reporter.js"
+  }
+}
